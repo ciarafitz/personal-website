@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"> <!--defines character set-->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--viewport allows wesite to work on all devices and screens-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<body>
+    <!--CONTENT GOES HERE-->
+
+    <!--Navigation Bar (Menu)-->
+    <nav class="w3-bar w3-blue">
+        <a href="#home" class="w3-button w3-bar-item">Home</a>
+        <a href="#about" class="w3-button w3-bar-item">About</a>
+        <a href="#projects" class="w3-button w3-bar-item">Projects</a>
+        <a href='#experience' class="w3-button w3-bar-item">Experience</a>
+        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+    </nav>
+
+    <!--Home-->
+    <section id="home" class="w3-content">
+
+    </section>
+
+    <!--Slideshow-->
+    <section>
+    
+        <img class="mySlides" src="sunset.jpeg" style="width:100%; height:450px">
+        <!--<img class="mySlides" src="lizard.jpeg" style="width:100%">
+        <img class="mySlides" src="Capitola.jpeg" style="width:100%">-->
+        <img class="mySlides" src="tobin-bridge.jpg" style="width:100%; max-height: 450px;">
+        <img class="mySlides" src="AI handshake.jpg" style="width:100%; max-height: 450px;">
+
+    </section>
+
+    <!--About me-->
+
+    <section id="about" class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">Software Engineer</h2>
+        <p class="w3-opacity">Recent Graduate from University of California, Santa Cruz
+            <br> Bachelor's Degree in Computer Science
+            <br> Front-End Developer
+        </p>
+    
+        <p class="w3-justify">Hi! My name is Ciara Fitzpatrick and I am a Latina Engineer. You can catch me outside reading or teaching myself iOS development. 
+            I have a passion for full stack development and Cybersecurity. My future goals are to work on projects using Virtual Reality, 
+            Augmented Reality, and Artificial Intelligence. In college, I first majored in Biology until I switched from the microscope to the computer. 
+            I realized that details in living species are similar as to those on a web page. The colors and shapes along with the functionality allow web pages to come to life. 
+            <!--As a bonus, I have a strong mathematical background and I am very detail-oritented -->
+        </p>
+    </section>
+
+    <br>
+
+
+    <!--Projects Section
+
+    Name of project, screenshot, description -->
+    <section id="projects" class="w3-row-padding w3-center w3-light-blue w3-content">
+        <article class="w3-third">
+            <p><b>Project 1</b></p>
+            <img src=" " alt="Name 1" style="width:100%">
+            <p>Project 1 was.........</p>
+        </article>
+        <article class="w3-third">
+            <p><b>Project 2</b></p>
+            <img src= " " alt="Name 2" style="width:100%">
+            <p>Project 2 was.....</p>
+        </article>
+        <article class="w3-third">
+            <p><b>Project 3</b></p>
+            <img src= " " alt="Name 3" style="width:100%">
+            <p>Project 3 was....</p>
+        </article>
+    </section>
+
+    <br>
+    <!--Experience-->
+    <section id="experience" class="w3-container w3-content" style="max-width:600px">
+        <h2 class="w3-wide w3-center">EXPERIENCE</h2>
+        <br>
+        <p></p>FileOpen Systems Inc.</p>
+        <p class="w3-opacity">Software Engineer Intern (July 2018-September 2018)</p>
+    
+
+        <p class="w3-justify w3-left">
+            <ul>
+            <li>Technology Used:</li>
+                <p class="w3-center w3-opacity-min">HTML/CSS
+                    <br>
+                    JavaScript
+                    <br>
+                    Vue.js
+                    <br>
+                    D3.js
+                    <br>
+                    Google Maps API
+                </p>
+            <!--<li><i>Leadership Skills:</i> Scrum Master of the team with -->
+            </li>
+
+               
+            
+            </ul>
+         </p>
+
+    
+    
+    
+    </section>
+
+
+    <!--Contact Section-->
+    
+    <section id="contact" class="w3-container w3-center w3-padding-32">
+        <article class="w3-wide">
+            <h2>CONTACT</h2>
+        Email: cfitzpatrick0011@gmail.com
+        <!--<p class="w3-opacity w3-center">Leave a message!</p> -->
+        <br>
+        <p class="w3-opacity w3-center w3-justify w3-pink"> Check out my LinkedIn below!
+        </article>
+
+        <!---
+        <forms action="/action_page.php" targets="_blank">
+        <input class="w3-input" type="text" placeholder="Your Name (Required)" required name= "Name">
+        <input class="w3-input" type="text" placeholder="Your Email (Required" required name="Email">
+        <input class="w3-input" type="text" placeholder="Your Message (Required)" required name="Message">
+        <button class= "w3-button w3-pink" type="submit">SEND!</button>
+        </forms>
+        -->
+
+    </section>
+    
+
+    <!--Footer-->
+    <footer class="w3-container w3-padding-8 w3-center w3-black w3-large w3-hover-pink ">
+        <a href="https://www.linkedin.com/in/ciara-fitzpatrick-0021a811b/"><i class="fa fa-linkedin"></i></a>
+        <br>
+        <small>&copy;2021 Ciara Fitzpatrick</small>
+    </footer>
+
+
+    <!--JS code has to be below HTML so slideshow HTML/JS codes can't be next each other-->
+
+    <!--JavaScript code to run slideshow
+    Change every 3 seconds-->
+    <script>
+    var myIndex= 0;
+    carousel();
+
+    function carousel(){
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i=0; i < x.length; i++){
+            x[i].style.display="none";
+        }
+        myIndex++;
+        if(myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+    </script>
+
+
+</body>
+</html>
