@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"> <!--viewport allows wesite to work on all devices and screens-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
 
 <body>
     <!--CONTENT GOES HERE-->
@@ -25,32 +26,25 @@
     <!--Slideshow-->
     <section>
     
-        <img class="mySlides" src="sunset.jpeg" style="width:100%; max-height:450px; margin:0px">
-        <!--<img class="mySlides" src="lizard.jpeg" style="width:100%">
-        <img class="mySlides" src="Capitola.jpeg" style="width:100%">-->
-        <img class="mySlides" src="tobin-bridge.jpg" style="width:100%; max-height: 450px; margin:0px">
-        <img class="mySlides" src="AI handshake.jpg" style="width:100%; max-height: 450px; margin:0px">
-        <img class="mySlides" src="SantaMonica.jpg" style="width:100%; max-height:450px; margin:0px">
-        <img class="mySlides" src="Lion.jpg" style="width:100%; max-height:450px; margin:0px">
-        <img class="mySlides" src="TechEyeball.jpg" style="width:100%; max-height:450px; margin:0px">
-        <img class="mySlides" src="GreenPurpleSunrise.jpg" style="width:100%; max-height:450px; margin:0px">
+        <img class="mySlides" src="images/sunset.jpeg">
+        <img class="mySlides" src="images/tobinBridge.jpg">
+        <img class="mySlides" src="images/aiHandshake.jpg">
+        <img class="mySlides" src="images/santaMonica.jpg">
+        <img class="mySlides" src="images/lion.jpg">
+        <img class="mySlides" src="images/techEyeball.jpg">
+        <img class="mySlides" src="images/greenSunrise.jpg">
 
     </section>
 
     <!--About me-->
 
-    <section id="about" class="w3-container w3-center w3-content" style="max-width:600px">
+    <section id="about" class="w3-container w3-center w3-content mySections">
         <h2 class="w3-wide">Software Engineer</h2>
         <p class="w3-opacity">Recent Graduate from University of California, Santa Cruz
             <br> Bachelor's Degree in Computer Science
             <br> Front-End Developer
         </p>
     
-        <!--<p class="w3-justify">Hi! My name is Ciara Fitzpatrick and I am a Latina Engineer. You can catch me outside reading or teaching myself iOS development. 
-            I have a passion for full stack development and Cybersecurity. My future goals are to work on projects using Virtual Reality, 
-            Augmented Reality, and Artificial Intelligence. In college, I first majored in Biology until I switched from the microscope to the computer. 
-            I realized that details in living species are similar as to those on a web page. The colors and shapes along with the functionality allow web pages to come to life. 
-        -->
         <p class="w3-justify">Hi! My name is Ciara Fitzpatrick and I am a Latina Engineer. You can catch me outside reading or taking pictures of nature. In college, 
             I first majored in Biology, but decided to switch from the microscope to the computer. 
             I realized that details in living species are similar as to those on a web page. The colors and shapes, along with the functionality, allow web pages to come to life. 
@@ -76,7 +70,7 @@
         <br>
         <article class="w3-third">
             <p><b>Unix Shell</b></p>
-            <img src=" " alt="Unix Shell" style="width:100%">
+            <img src=" " alt="Unix Shell" class="projectImages">
 
             <ul>
             
@@ -91,7 +85,7 @@
         </article>
         <article class="w3-third">
             <p><b>Flappybird</b></p>
-            <img src= " " alt="Flappybird" style="width:100%">
+            <img src= " " alt="Flappybird" class="projectImages">
             <ul>
             <li><p>Designed and developed my own unique rendition of "Flappybird" utilizing the JavaScript library <b>p5.js</b> </p>
             </li>
@@ -99,7 +93,7 @@
         </article>
         <article class="w3-third">
             <p><b>Greek Scholarship Fund</b></p>
-            <img src= " " alt="Greek Scholarship Fund" style="width:100%">
+            <img src= " " alt="Greek Scholarship Fund" class="projectImages">
             <p>
             <ul>
                 <li>Collaborated on a 5-person team to construct a CRUD web app that records and logs student information 
@@ -116,7 +110,7 @@
 
     <br>
     <!--Experience-->
-    <section id="experience" class="w3-container w3-content" style="max-width:600px">
+    <section id="experience" class="w3-container w3-content mySections">
         <h2 class="w3-wide w3-center">EXPERIENCE</h2>
         <br>
         <p></p>FileOpen Systems Inc.</p>
@@ -134,20 +128,6 @@
 
         </p>
 
-        <!--<p class="w3-justify w3-left">
-            <ul>
-            <li>Technology Used:</li>
-                <p class="w3-center w3-opacity-min">HTML/CSS
-                    <br>
-                    JavaScript
-                    <br>
-                    Vue.js
-                    <br>
-                    D3.js
-                    <br>
-                    Google Maps API
-                </p> -->
-            <!--<li><i>Leadership Skills:</i> Scrum Master of the team with -->
             </li>
 
                
@@ -196,22 +176,8 @@
 
     <!--JavaScript code to run slideshow
     Change every 3 seconds-->
-    <script>
-    var myIndex= 0;
-    carousel();
+    <script src="script.js"></script>
 
-    function carousel(){
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i=0; i < x.length; i++){
-            x[i].style.display="none";
-        }
-        myIndex++;
-        if(myIndex > x.length) {myIndex = 1}
-        x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 3000);
-    }
-    </script>
 
 
 </body>
