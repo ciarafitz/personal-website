@@ -11,3 +11,9 @@
 .projectImages{
     width:100%;
 }
+
+.linkedinButton{
+    border:solid;
+    padding:2px;
+    border-radius:4px;
+}
