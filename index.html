@@ -6,16 +6,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 
-<body>
+
     <!--CONTENT GOES HERE-->
 
     <!--Navigation Bar (Menu)-->
-    <nav class="w3-bar w3-blue">
-        <a href="#home" class="w3-button w3-bar-item">Home</a>
-        <a href="#about" class="w3-button w3-bar-item">About</a>
-        <a href="#projects" class="w3-button w3-bar-item">Projects</a>
-        <a href='#experience' class="w3-button w3-bar-item">Experience</a>
-        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+    <nav class="w3-bar w3-padding-32 w3-container w3-white navBar">
+        <a href="#home" class="w3-button w3-bar-item w3-hover-blue ">Home</a>
+        <a href="#about" class="w3-button w3-bar-item w3-hover-red ">About</a>
+        <a href="#projects" class="w3-button w3-bar-item w3-hover-yellow ">Projects</a>
+        <a href='#experience' class="w3-button w3-bar-item w3-hover-blue ">Experience</a>
+        <a href="#contact" class="w3-button w3-bar-item w3-hover-green ">Contact</a>
     </nav>
 
     <!--Home-->
@@ -37,8 +37,9 @@
     </section>
 
     <!--About me-->
+<br>
 
-    <section id="about" class="w3-container w3-center w3-content mySections">
+    <section id="about" class="w3-container w3-center w3-content mySections mySummary">
         <h2 class="w3-wide">Software Engineer</h2>
         <p class="w3-opacity">Recent Graduate from University of California, Santa Cruz
             <br> Bachelor's Degree in Computer Science
@@ -65,59 +66,56 @@
 
     Name of project, screenshot, description -->
     
-    <section id="projects" class="w3-row-padding w3-center w3-light-blue w3-content">
+    <section id="projects" class="w3-container w3-row-padding w3-center w3-content myProjects">
         <h2 class="w3-wide w3-center">PROJECTS</h2>
         <br>
         <article class="w3-third">
             <p><b>Unix Shell</b></p>
-            <img src=" " alt="Unix Shell" class="projectImages">
+            <img src=" " class="projectImages">
 
             <ul>
             
                 <li>
-            <p>Implemented a basic Unix shell in C to read, parse, and execute shell commands while supporting several 
-                built-in commands such as cd, help, and exit. 
-
+            <p>Implemented a basic Unix shell in C to read, parse, and execute shell commands.
                 </li>
 
-                <li>
-                    Parsed and interpreted shell commands by tokenizing the input string, and reading the first token to 
-                    see if the user is attempting to run a built-in command or a program.
+                <li>Parsed and interpreted shell commands by tokenizing the input string.
                 </li>
 
-                <li>Took advantage of the fork and exec commands to launch new processes, while using concurrency principles 
-                    to monitor the state of the launched process so the shell can gracefully resume once the process terminates.
+                <li> Used fork and exec commands to launch new processes.
                 </li>
+<br>
+                <a href="https://github.com/ciarafitz/UnixShell" style="color:#8347e2">GitHub Project Link</a>
             </ul>
         </article>
         <article class="w3-third">
             <p><b>Flappybird</b></p>
-            <img src= " " alt="Flappybird" class="projectImages">
+            <img src= " "class="projectImages">
             <ul>
             <li><p>Designed and developed my own unique rendition of "Flappybird" utilizing the JavaScript library <b>p5.js</b> </p>
             </li>
+
+            <a href="https://github.com/ciarafitz/flappybird" style="color:#8347e2">GitHub Project Link</a>
             </ul>
         </article>
         <article class="w3-third">
             <p><b>Greek Scholarship Fund</b></p>
-            <img src= " " alt="Greek Scholarship Fund" class="projectImages">
+            <img src= " " class="projectImages">
             <p>
             <ul>
-                <li>Collaborated on a 5-person team to construct a CRUD web app that records and logs student information 
+                <li>Collaborated on a 5-person team to construct and design a CRUD web app. 
+                    
                 </li>
-                <li>Users in "admin" role can <i>store, edit</i> and <i>delete</i> <b>any</b> info in the database
+                <br>
+                <li>Database provides users with the <b>admin role</b> <i>universal</i> read/write access, 
+                    while <b>regular</b> users are only given read/write access to their <i>own data.</i>
                 </li>
-                <li>Users in "student" role can only <i>store, edit</i> and <i>delete</i> <b>their own</b> info
-                </li>
+                <br>
                 <li>
-                    Constructed and designed the database to provide users with the admin role universal read/write access, 
-                    while regular users are only given read/write access to their own data
+                    Utilized HTML/CSS and Python along with the web2py framework, while using MySQL as the database.
                 </li>
-                <li>
-                    Utilized HTML/CSS and Python along with the web2py framework, while using MySQL as the database
-
-
-                </li>
+                <br>
+                <a href="https://github.com/DangerousDan1/ScholarshipWebsite" style="color:#8347e2">GitHub Project Link</a>
             </ul>
 
             </p>
@@ -126,24 +124,16 @@
 
     <br>
     <!--Experience-->
-    <section id="experience" class="w3-container w3-content mySections">
+    <section id="experience" class="w3-container w3-content mySections myExperience">
         <h2 class="w3-wide w3-center">EXPERIENCE</h2>
         <br>
         <p></p>FileOpen Systems Inc.</p>
         <p class="w3-opacity">Software Engineer Intern </p>
-
-        <p class="w3-justify">
+        <p class=" w3-container w3-justify w3-padding-32 ">
         <ul>
-
-        <li>
-            <p>Worked in a 4-person team alongside the product manager to provide data visualization graphs and charts from the analytics of shared files.
-            The technical tools used were <b>JavaScript, Vue.js, D3.js, and Google Maps API</b> </p> 
-        </li>
-
         <li>
             Supported FileOpen, a digital rights management company, which aimed to provide the analytics behind each shared file using data visualization. 
             Generated graphs and charts, conveyed average session times, number of times a document was opened, location, etc.
-
         </li>
 
         <li>Employed HTML/CSS along with various JavaScript frameworks/libraries including Vue.js, D3.js, and Google Maps API.
@@ -153,26 +143,17 @@
             sprint in order to achieve a successful end product
         </li>
 
-        </ul>
-
-        </p>
-
-            </li>
-
-               
-            
-            </ul> 
-         </p>
+        <a href="https://github.com/ciarafitz/mavericks" style="color:#8347e2">GitHub Project Link</a>
 
     
     
     
     </section>
 
-
+<br>
     <!--Contact Section-->
     
-    <section id="contact" class="w3-container w3-center w3-padding-32">
+    <section id="contact" class="w3-container w3-center w3-padding-16 myContact">
         <article class="w3-wide">
             <h2>CONTACT</h2>
         Email: cfitzpatrick0011@gmail.com
@@ -192,9 +173,9 @@
 
     </section>
     
-
+<br>
     <!--Footer-->
-    <footer class="w3-container w3-padding-8 w3-center w3-black w3-large w3-hover-pink ">
+    <footer class="w3-container w3-padding-8 w3-center w3-black w3-large">
         <a class="linkedinButton" href="https://www.linkedin.com/in/ciara-fitzpatrick-0021a811b/"><i class="fa fa-linkedin"></i></a>
         <br>
         <small>&copy;2022 Ciara Fitzpatrick</small>

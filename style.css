@@ -4,8 +4,54 @@
     margin:0px
 }
 
+/*.w3-button{
+    font-family: cursive;
+}
+.w3-button:hover{
+    background-color: plum;
+    color: yellow;
+    font-family: fantasy;
+
+}
+*/
+
+.navBar{
+    margin: auto;
+    text-align: center;
+}
 .mySections{
     max-width:600px;
+    
+}
+
+.mySummary{
+    border-radius:50px;
+    border:solid;
+    padding: 15px;
+    border-color:plum;
+    /*border-style: double; */
+}
+
+.myProjects{
+        border-radius:80px;
+        border:solid;
+        padding: 15px;
+        border-color:rgb(115, 238, 220);
+        font-size: small;
+}
+
+.myExperience{
+        border-radius:90px;
+        border:solid;
+        padding: 15px;
+        border-color:rgb(110, 228, 106);
+}
+
+.myContact{
+        border-radius:40px;
+        border:solid;
+        padding: 15px;
+        border-color:rgb(236, 146, 62);
 }
 
 .projectImages{
@@ -17,3 +63,9 @@
     padding:2px;
     border-radius:4px;
 }
+
+.linkedinButton:hover{
+    background-color: plum;
+}
+
+
