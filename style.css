@@ -27,30 +27,76 @@
 .mySummary{
     border-radius:50px;
     border:solid;
-    padding: 15px;
     border-color:plum;
+    font-size: 17px;
     /*border-style: double; */
+}
+
+.smallSummary{
+    font-size: 15px;
 }
 
 .myProjects{
         border-radius:80px;
         border:solid;
-        padding: 15px;
+        
         border-color:rgb(115, 238, 220);
-        font-size: small;
+        font-size: 15px;
 }
 
+.smallProjects{
+    font-size: 15px;
+}
+
+.boxProjects{
+    border-style: solid;
+    border-color: rgb(131, 107, 236);
+}
+
+.cyberBox{
+    border-style: solid;
+    border-color: grey;
+    display:inline;
+}
+
+.aiBox{
+    border-style: solid;
+    border-color: grey;
+    display:inline;
+
+   
+}
+
+.vrBox{
+    border-style: solid;
+    border-color: grey;
+    display:inline;
+   
+}
+
+.arBox{
+    border-style: solid;
+    border-color: grey;
+    display:inline;
+
+}
+
+
+.iosBox{
+    border-style: solid;
+    border-color: grey;
+    display:inline;
+
+}
 .myExperience{
         border-radius:90px;
         border:solid;
-        padding: 15px;
         border-color:rgb(110, 228, 106);
 }
 
 .myContact{
         border-radius:40px;
         border:solid;
-        padding: 15px;
         border-color:rgb(236, 146, 62);
 }
 
